@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import animals from '../../data';
+import animals from '../../data.js';
 import background from '../../background.png';
 import Animal from '../Animal/Animal';
 
@@ -10,8 +10,10 @@ export default function Main() {
       {animals.map((animal) => (
         <Animal
           key={animal.name}
+          image={`../public/animals/${animal.name}.svg`}
           name={animal.name}
           says={animal.says}
+          type={animal.type}
           top={animal.top}
           left={animal.left}
         />
