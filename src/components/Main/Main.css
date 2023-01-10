@@ -2,8 +2,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  background-size: cover;
-  height: 640px;
+  background-size: fill;
+  height: 80%;
   align-content: flex-start;
   position: relative;
 }
